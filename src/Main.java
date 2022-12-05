@@ -20,10 +20,10 @@ public class Main {
             switch(key){
                 case 1:
                 {
-                    operation.queryAccount(accounts.get(0));
+                    //operation.queryAccount(accounts.get(0));
                     break;
                 }
-                case 6:
+                case 8:
                 default:
                 {
                     System.exit(0);
@@ -33,11 +33,13 @@ public class Main {
 
     }
     private static void showMenu() {
-        System.out.println("1.查询账户信息");
-        System.out.println("2.存款");
-        System.out.println("3.取款");
-        System.out.println("4.转账");
-        System.out.println("5.查询余额");
-        System.out.println("6.退出");
+        System.out.println("1.开户");
+        System.out.println("2.销户");
+        System.out.println("3.查询余额");
+        System.out.println("4.取钱");
+        System.out.println("5.存钱");
+        System.out.println("6.转账");
+        System.out.println("7.修改账户信息");
+        System.out.println("8.退出");
     }
 }
