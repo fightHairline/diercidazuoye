@@ -34,7 +34,7 @@ public class Account {
     /**
      * 账户余额
      */
-    private float balance;
+    private double balance;
     /**
      * 账户备注信息
      */
@@ -53,7 +53,7 @@ public class Account {
      * @param memo 账户备注信息
      */
     public Account(String id,String name,String password,String identifyId,String phone,
-                   char sex,String birthday,float balance,String memo) {
+                   char sex,String birthday,double balance,String memo) {
         this.id = id;
         this.name = name;
         this.password = password;
@@ -168,14 +168,14 @@ public class Account {
      * 获取账户余额
      * @return 账户余额
      */
-    public float getBalance() {
+    public double getBalance() {
         return balance;
     }
     /**
      * 设置账户余额
      * @param balance 账户余额
      */
-    public void setBalance(float balance) {
+    public void setBalance(double balance) {
         this.balance = balance;
     }
     /**

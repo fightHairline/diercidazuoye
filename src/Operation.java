@@ -10,15 +10,15 @@ public class Operation {
         return operation;
     }
     //存款
-    public void deposit(Account account, float money) {
+    public void deposit(Account account, double money) {
         account.setBalance(account.getBalance() + money);
     }
     //取款
-    public void withdraw(Account account, float money) {
+    public void withdraw(Account account, double money) {
         account.setBalance(account.getBalance() - money);
     }
     //转账
-    public void transfer(Account account1, Account account2, float money) {
+    public void transfer(Account account1, Account account2, double money) {
         account1.setBalance(account1.getBalance() - money);
         account2.setBalance(account2.getBalance() + money);
     }
